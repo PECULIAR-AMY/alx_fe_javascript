@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -24,4 +24,27 @@ input, button {
 .quote {
     border-bottom: 1px solid #eee;
     padding: 10px 0;
+} */
+
+/* .body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
 }
+.quote-Display {
+    color: aqua;
+    background-color:blue;
+}
+
+.new-Quote {
+    color: aqua;
+    height: auto;
+    margin: auto;
+}
+
+.import-button {
+    background-color: red;
+    color: blue;
+    margin: 2px;
+
+} */

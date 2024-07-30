@@ -48,3 +48,26 @@ input, button {
     margin: 2px;
 
 } */
+
+:hover.button-1 {
+    background-color: rgb(103, 41, 41);
+    color: aqua;
+
+}
+
+.display-quote {
+    background-color: rgb(91, 217, 217);
+    text-align: center;
+    width:auto;
+    color: white;
+    height: 50px;
+    margin-top: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}  
+
+.quote {
+    text-align: center;
+    
+}

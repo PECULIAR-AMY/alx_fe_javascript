@@ -6,13 +6,13 @@
   <link rel="stylesheet" href="/index.css">
   <title>Dynamic Quote Generator</title>
 </head>
-<body>
-  <h1>Dynamic Quote Generator</h1>
-  <div id="quoteDisplay"></div>
+<body class="body">
+  <h1 class="quote">Dynamic Quote Generator</h1>
+  <div id="quoteDisplay"  class="display-quote"></div>
   <button onclick="showRandomQuote()" id="newQuote">Show New Quote</button>
 
 
-  <div>
+  <div class="placeholder">
     <input id="newQuoteText" type="text" placeholder="Enter a new quote" />
     <input id="newQuoteCategory" type="text" placeholder="Enter quote category" />
     <button onclick="addQuote()">Add Quote</button>
@@ -21,7 +21,7 @@
 
    <div>
     <input type="file" id="importFile" accept=".json" placeholder="Import Quotes" onchange="importFromJsonFile(event)" />
-    <button onclick="importFromJsonFile()">Import Quotes</button>
+    <button onclick="importFromJsonFile()" class="button">Import Quotes</button>
   </div>
 
 
@@ -33,7 +33,7 @@
 
 <div>
   <label for="">Export</label>
-  <button onclick="exportToJsonFile()">Export Quotes</button>
+  <button onclick="exportToJsonFile()" class="button-1">Export Quotes</button>
 </div>
 
   

@@ -1,58 +1,6 @@
-/* body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-.container {
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
-    width: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-input, button {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-}
-.quotes {
-    margin-top: 20px;
-}
-.quote {
-    border-bottom: 1px solid #eee;
-    padding: 10px 0;
-} */
-
-/* .body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    height: 100vh;
-}
-.quote-Display {
-    color: aqua;
-    background-color:blue;
-}
-
-.new-Quote {
-    color: aqua;
-    height: auto;
-    margin: auto;
-}
-
-.import-button {
-    background-color: red;
-    color: blue;
-    margin: 2px;
-
-} */
-
 :hover.button-1 {
     background-color: rgb(103, 41, 41);
     color: aqua;
-
 }
 
 .display-quote {

@@ -1,42 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/index.css">
-  <title>Dynamic Quote Generator</title>
-</head>
-<body class="body">
-  <h1 class="quote">Dynamic Quote Generator</h1>
-  <div id="quoteDisplay"  class="display-quote"></div>
-  <button onclick="showRandomQuote()" id="newQuote">Show New Quote</button>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dynamic Quote Generator</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				padding: 20px;
+			}
+			#quoteDisplay {
+				margin: 20px 0;
+				font-size: 1.2em;
+				font-weight: bold;
+			}
+			input,
+			button,
+			select {
+				margin-right: 10px;
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Dynamic Quote Generator</h1>
+		<div>
+			<label for="categoryFilter">Filter by Category:</label>
+			<select id="categoryFilter" onchange="filterQuotes()">
+				<option value="all">All Categories</option>
+				<!-- Dynamically populated categories -->
+			</select>
+		</div>
+		<div id="notification" style="display: none; color: red"></div>
 
+		<div id="quoteDisplay">Click "Show New Quote" to display a quote.</div>
+		<button id="newQuote">Show New Quote</button>
+		<div>
+			<input id="newQuoteText" type="text" placeholder="Enter a new quote" />
+			<input
+				id="newQuoteCategory"
+				type="text"
+				placeholder="Enter quote category"
+			/>
+			<button onclick="addQuote()">Add Quote</button>
+		</div>
 
-  <div class="placeholder">
-    <input id="newQuoteText" type="text" placeholder="Enter a new quote" />
-    <input id="newQuoteCategory" type="text" placeholder="Enter quote category" />
-    <button onclick="addQuote()">Add Quote</button>
-  </div>
-
-
-   <div>
-    <input type="file" id="importFile" accept=".json" placeholder="Import Quotes" onchange="importFromJsonFile(event)" />
-    <button onclick="importFromJsonFile()" class="button">Import Quotes</button>
-  </div>
-
-
- <label for="categoryFilter">Filter by Category:</label>
-<select id="categoryFilter" onchange="filterQuotes()">
-  <option value="all">All Categories</option>
-</select>
-
-
-<div>
-  <label for="">Export</label>
-  <button onclick="exportToJsonFile()" class="button-1">Export Quotes</button>
-</div>
-
-  
-  <script src="/script.js"></script>
-</body>
+		<button id="exportQuotes">Export Quotes</button>
+		<input
+			type="file"
+			id="importFile"
+			accept=".json"
+			onchange="importFromJsonFile(event)"
+		/>
+		<script src="script.js"></script>
+	</body>
 </html>
